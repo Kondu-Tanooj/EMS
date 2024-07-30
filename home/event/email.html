@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style>
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 800px;
+        }
+    </style>
+</head>
+<body>
+    <div align="center">
+        <h1><b>Bulk Email Sender</b></h1>
+    </div>
+    <div class="center">
+            <form action="send_emails.php" method="post" enctype="multipart/form-data">
+                <label for="sender_email"><b>Your Email:</b></label><br>
+                <input type="email" id="sender_email" name="sender_email" required><br><br>
+                <label for="sender_password"><b>Password:</b></label><br>
+                <input type="password" id="sender_password" name="sender_password" required><br><br>
+                <label for="subject"><b>Subject:</b></label><br>
+                <input type="text" id="subject" name="subject" required><br><br>
+                <label for="message"><b>Message:</b></label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+                <label for="attachment"><b>Attachment:</b></label><br>
+                <input type="file" id="attachment" name="attachment"><br><br>
+                <label for="recipient_emails"><b>Recipient Emails (separated by comma):</b></label><br>
+                <textarea id="recipient_emails" name="recipient_emails" rows="4" cols="50" required></textarea><br><br>
+                <input type="submit" value="Send Emails" class="btn btn-primary">
+            </form>
+    </div>
+    <!-- Bootstrap JS (optional) -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"></script>
+</body>
+</html>
