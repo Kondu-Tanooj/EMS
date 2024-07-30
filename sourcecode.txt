@@ -1,0 +1,5 @@
+*** EVENT MANAGEMENT SYSTEM ***
+
+Git_Repository Link:
+
+https://github.com/AjayCodes7/ems-mini15b
